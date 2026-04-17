@@ -2,7 +2,7 @@
 
 **Multi-signal water breakthrough and production performance detector.**
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vannvakt-zrd9doqyvxnxnpfzyruqbc.streamlit.app/)
 
 ---
 
