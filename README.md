@@ -62,7 +62,7 @@ The app auto-detects which mode to use based on data density.
 
 Thresholds are defined in `BREAKTHROUGH_CONFIG` and separated from logic for independent review.
 
-![Oil vs Water Cut](volve%20figs/vannvakt_oil_vs_wc.png)
+![Oil vs Water Cut](volve%20figs/vannvakt_watercut.png)
 
 ### Live Snapshot (Florida)
 
