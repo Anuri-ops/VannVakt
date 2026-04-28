@@ -24,7 +24,6 @@ The app tracks **five signals simultaneously:**
 | Field baseline deviation | Well vs field average |
 | Trend acceleration | Rate of change, not just level |
 
-![Water Cut Trends](volve%20figs/vannvakt_watercut.png)
 
 ---
 
@@ -60,6 +59,11 @@ The app auto-detects which mode to use based on data density.
 
 ![Oil vs Water Cut](volve%20figs/vannvakt_oil_vs_wc.png)
 
+
+Thresholds are defined in `BREAKTHROUGH_CONFIG` and separated from logic for independent review.
+
+![Oil vs Water Cut](volve%20figs/vannvakt_oil_vs_wc.png)
+
 ### Live Snapshot (Florida)
 
 **Sustained flag:** water cut ≥ 80%
@@ -69,7 +73,8 @@ The app auto-detects which mode to use based on data density.
 - Water cut already above 70%
 - Daily oil rate declining
 
-Thresholds are defined in `BREAKTHROUGH_CONFIG` and separated from logic for independent review.
+  
+![VannVakt Livesnapshot](volve%20figs/vannvakt_livesnapshot.png)
 
 ---
 
