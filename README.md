@@ -2,13 +2,17 @@
 
 **Multi-signal water breakthrough and production performance detector.**
 
+Water breakthrough is one of the leading causes of well abandonment on the Norwegian Continental Shelf. 
+VannVakt detects it early — tracking five signals simultaneously across historical and live production data.
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vannvakt.streamlit.app/)
 
 ---
 
 ## What It Does
 
-VannVakt monitors oil wells for water breakthrough — the point where a well starts producing more water than oil. Left undetected, this drives up lifting costs and kills well economics.
+VannVakt monitors oil wells for water breakthrough — the point where a well starts producing more water 
+than oil. Left undetected, this drives up lifting costs and kills well economics.
 
 The app tracks **five signals simultaneously:**
 
@@ -19,6 +23,8 @@ The app tracks **five signals simultaneously:**
 | GOR (Gas-Oil Ratio) | Reservoir pressure drop |
 | Field baseline deviation | Well vs field average |
 | Trend acceleration | Rate of change, not just level |
+
+![Water Cut Trends](volve%20figs/vannvakt_watercut.png)
 
 ---
 
@@ -43,6 +49,7 @@ The app auto-detects which mode to use based on data density.
 ## Breakthrough Detection Logic
 
 ### Historical (Volve)
+
 **Sudden breakthrough** — all three must be true:
 - Water cut rises ≥ 10% in one month
 - Water cut already above 20%
@@ -51,7 +58,10 @@ The app auto-detects which mode to use based on data density.
 **Sustained breakthrough:**
 - 3-month rolling average water cut ≥ 30%
 
+![Oil vs Water Cut](volve%20figs/vannvakt_oil_vs_wc.png)
+
 ### Live Snapshot (Florida)
+
 **Sustained flag:** water cut ≥ 80%
 
 **Dual-signal flag** — all three must be true:
@@ -60,6 +70,12 @@ The app auto-detects which mode to use based on data density.
 - Daily oil rate declining
 
 Thresholds are defined in `BREAKTHROUGH_CONFIG` and separated from logic for independent review.
+
+---
+
+## Dashboard
+
+![VannVakt Diagnostic](volve%20figs/vannvakt_diagnostic.png)
 
 ---
 
